@@ -390,6 +390,9 @@
     <ClCompile Include="피치나보열수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="반파도열수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RNFYRHWK.h">
