@@ -387,6 +387,9 @@
     <ClCompile Include="예산배분.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="피치나보열수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RNFYRHWK.h">
