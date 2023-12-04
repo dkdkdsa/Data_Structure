@@ -393,6 +393,15 @@
     <ClCompile Include="반파도열수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="삼각형과파스칼_1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="삼각형과파스칼_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1로만들기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RNFYRHWK.h">

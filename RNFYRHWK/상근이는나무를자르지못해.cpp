@@ -26,8 +26,8 @@ int main() {
 
 	}
 
-
 	sort(vec.begin(), vec.end());
+
 	INT l = 0, r = vec.back();
 	INT res = 0, mid = 0, max = -1;
 
