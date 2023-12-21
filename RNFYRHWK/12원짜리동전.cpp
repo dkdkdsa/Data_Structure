@@ -3,6 +3,8 @@
 
 using namespace std;
 
+int arr[100001];
+
 int main() {
 
 	int n, k;
@@ -11,37 +13,61 @@ int main() {
 
 	cin >> n >> k;
 
-	vector<int> vec;
-
-	int res = 0;
+	vector<int> ress;
 
 	for (int i = 0; i < n; i++) {
 
+		int res;
 		cin >> res;
-		vec.push_back(res);
+
+		arr[res] = 1;
+
+		ress.push_back(res);
 
 	}
 
-	int size = vec.size();
-	int cnt = 0;
-	res = 0;
 
-	for (int i = 0; i < size; i++) {
+	for (int i = 0; i <= k; i++) {
 
-		cnt = k / vec[i];
-		k -= cnt * vec[i];
-		res += cnt;
+		int curM = INT32_MAX;
+
+		for (int j : ress) {
+
+			if (i < j) continue;
+
+			if (arr[i - j] != 0) {
+
+				if (arr[i] == 0) {
+
+					arr[i] = arr[i - j] + 1;
+
+				}
+				else {
+
+					arr[i] = min(arr[i], arr[i - j] + 1);
+
+				}
+
+			}
+
+		}
+
+		if (curM != INT32_MAX) {
+
+			arr[i] = curM;
+
+		}
 
 	}
 
-	if (k == 0) {
+	if (arr[k] == 0) {
 
-		cout << res;
+		cout << -1;
 
 	}
 	else {
 
-		cout << -1;
+		cout << arr[k];
 
 	}
 
